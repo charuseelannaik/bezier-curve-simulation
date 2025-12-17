@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Bézier Curve with Physics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Interactive Bézier Curve with Physics</h1>
+        <div class="instructions">
+            <p>Move your mouse to control the curve. Drag near control points P₁ or P₂ to move them directly.</p>
+        </div>
+        <canvas id="bezierCanvas"></canvas>
+        <div class="controls">
+            <label>Spring Stiffness: <input type="range" id="stiffnessSlider" min="0.01" max="0.5" step="0.01" value="0.1"></label>
+            <label>Damping: <input type="range" id="dampingSlider" min="0.9" max="0.99" step="0.01" value="0.95"></label>
+            <button id="resetBtn">Reset Curve</button>
+        </div>
+    </div>
+    <script src="bezier.js"></script>
+</body>
+</html>
